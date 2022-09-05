@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           primarySwatch:Colors.indigo
       ),
       debugShowCheckedModeBanner: false,
-      home: Waiting() ,
+      home: const Waiting() ,
     );
   }
 }

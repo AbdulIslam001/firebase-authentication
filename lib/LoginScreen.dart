@@ -1,4 +1,3 @@
-import 'dart:async';
 
 import'package:flutter/material.dart';
 
@@ -17,9 +16,7 @@ class _WaitingState extends State<Waiting> {
     super.initState();
     splash.IsLogin(context);
   }
-  void dispose(){
-    super.dispose();
-  }
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

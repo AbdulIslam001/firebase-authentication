@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Login_with_ph_number.dart';
 import 'Reuse_Button.dart';
 import 'Screen.dart';
 import 'Sign_Up.dart';
@@ -125,6 +126,25 @@ class _ViewState extends State<View> {
                     }
 
                   }
+                  ),
+                  const SizedBox(
+                    height: 60,
+                  ),
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> SignWithNumber()));
+                    },
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        border: Border.all(
+                          color: Colors.black
+                        )
+                      ),
+                      child:const Center(child:  Text('Sign in with phone number')),
+                    ),
                   )
                 ],
               ),
