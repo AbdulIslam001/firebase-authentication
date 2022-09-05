@@ -37,7 +37,7 @@ class _SignUpState extends State<SignUp> {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(22.0),
             child: Form(
               key: _formkey,
               child: Column(
