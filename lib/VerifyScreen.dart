@@ -28,7 +28,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                 child: TextFormField(),
               ),
               const SizedBox(
-                height: 100,
+                height: 60,
               ),
               ReuseButton(title: 'verify', ontap: (){
                 Navigator.of(context).push(MaterialPageRoute(
