@@ -47,6 +47,7 @@ class _SignWithNumberState extends State<SignWithNumber> {
                 setState(() {
                   loading=true;
                 });
+
                 auth.verifyPhoneNumber(
                   phoneNumber:verifer.text ,
                     verificationCompleted: (_){},

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'Reuse_Button.dart';
 import 'Screen.dart';
-import 'SplashView.dart';
+
 
 class VerificationScreen extends StatefulWidget {
   final  verificationcode;
