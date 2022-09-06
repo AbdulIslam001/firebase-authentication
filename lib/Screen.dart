@@ -1,3 +1,4 @@
+import 'package:demo/Utilities.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,8 @@ final auth = FirebaseAuth.instance;
            Navigator.push(context, MaterialPageRoute(
                builder: (context)=>const View()
            ));
+         }).onError((error, stackTrace){
+           utilies().messege(error.toString());
          });
         }, icon:const Icon(Icons.logout_outlined)),
         centerTitle: true,
