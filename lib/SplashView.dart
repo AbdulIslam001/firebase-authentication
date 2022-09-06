@@ -114,7 +114,7 @@ class _ViewState extends State<View> {
                         setState(() {
                           loading=false;
                         });
-                        utilies().messege(value.user!.displayName.toString());
+                   //     utilies().messege(value.user!.emailVerified.toString());
                       Navigator.push(context, MaterialPageRoute(builder: (context)
                       => MainScreen()));
                       }).onError((error, stackTrace){
