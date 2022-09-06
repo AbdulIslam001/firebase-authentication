@@ -58,19 +58,20 @@ class _VerificationScreenState extends State<VerificationScreen> {
                     loading =false;
                   });
                   await auth.signInWithCredential(credential);
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MainScreen()));
                 }catch(e){
                   setState(() {
                     loading =false;
                   });
                   utilies().messege(e.toString());
                 }
-                if(verifier.text.toString()== widget.verificationcode){
+            /*    if(verifier.text.toString()== widget.verificationcode){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MainScreen()));
                 }else {
                   (e){
                   utilies().messege(e.toString());
                 };
-                }
+                } */
                 }
               )
             ],

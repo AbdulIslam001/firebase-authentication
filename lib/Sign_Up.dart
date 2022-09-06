@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'Reuse_Button.dart';
+import 'Screen.dart';
 import 'Utilities.dart';
 
 class SignUp extends StatefulWidget {
@@ -119,9 +120,16 @@ class _SignUpState extends State<SignUp> {
                         loading=true;
                       });
                       _auth.createUserWithEmailAndPassword(email: _email.text.toString(),
-                          password: _password.text.toString()).then((value) => setState(() {
-                        loading=false;
-                      })).onError((error,
+                          password: _password.text.toString()).then((value) {
+
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                              MainScreen()
+                            ));
+                            setState(() {
+                          loading=false;
+                        });
+                      }
+                      ).onError((error,
                           stackTrace) {
                         utilies().messege(error.toString());
                         setState(() {
