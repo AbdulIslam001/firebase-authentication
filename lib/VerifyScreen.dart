@@ -1,9 +1,9 @@
-import 'package:demo/Utilities.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'Reuse_Button.dart';
 import 'Screen.dart';
+import 'Utilities.dart';
 
 
 class VerificationScreen extends StatefulWidget {
@@ -65,13 +65,6 @@ class _VerificationScreenState extends State<VerificationScreen> {
                   });
                   utilies().messege(e.toString());
                 }
-            /*    if(verifier.text.toString()== widget.verificationcode){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MainScreen()));
-                }else {
-                  (e){
-                  utilies().messege(e.toString());
-                };
-                } */
                 }
               )
             ],

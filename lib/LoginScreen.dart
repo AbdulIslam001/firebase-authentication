@@ -20,9 +20,10 @@ class _WaitingState extends State<Waiting> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: CircularProgressIndicator.adaptive(),
-      ),
+      body: Center(child: CircularProgressIndicator(
+        color: Colors.red,
+        strokeWidth: 5,
+      )),
     );
   }
 }

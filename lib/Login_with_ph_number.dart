@@ -1,8 +1,8 @@
 import 'package:demo/Reuse_Button.dart';
-import 'package:demo/Utilities.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import 'Utilities.dart';
 import 'VerifyScreen.dart';
 
 class SignWithNumber extends StatefulWidget {

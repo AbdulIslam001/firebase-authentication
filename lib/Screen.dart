@@ -1,10 +1,10 @@
 import 'package:demo/Reuse_Button.dart';
-import 'package:demo/Utilities.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
 import 'SplashView.dart';
+import 'Utilities.dart';
 
 class MainScreen extends StatefulWidget {
    MainScreen({Key? key}) : super(key: key);

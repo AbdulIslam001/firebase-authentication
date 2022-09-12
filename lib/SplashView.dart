@@ -1,5 +1,4 @@
 
-import 'package:demo/Utilities.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +7,7 @@ import 'Login_with_ph_number.dart';
 import 'Reuse_Button.dart';
 import 'Screen.dart';
 import 'Sign_Up.dart';
+import 'Utilities.dart';
 
 class View extends StatefulWidget {
   const View({Key? key}) : super(key: key);
